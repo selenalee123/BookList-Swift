@@ -14,6 +14,11 @@
 		3F4E78CA2899782500BB106A /* ReadMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E78C92899782500BB106A /* ReadMeTests.swift */; };
 		3F4E78D42899782500BB106A /* ReadMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E78D32899782500BB106A /* ReadMeUITests.swift */; };
 		3F4E78D62899782500BB106A /* ReadMeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E78D52899782500BB106A /* ReadMeUITestsLaunchTests.swift */; };
+		3F4E78E32899785500BB106A /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E78E22899785500BB106A /* Book.swift */; };
+		3F4E78E62899798B00BB106A /* Book views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E78E52899798B00BB106A /* Book views.swift */; };
+		3FEC267228A2E5C100447FFB /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC267128A2E5C100447FFB /* Library.swift */; };
+		3FEC267428A2E73B00447FFB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC267328A2E73B00447FFB /* DetailView.swift */; };
+		3FEC267628A3EE6800447FFB /* PHPickerViewController.View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC267528A3EE6800447FFB /* PHPickerViewController.View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		3F4E78CF2899782500BB106A /* ReadMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4E78D32899782500BB106A /* ReadMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMeUITests.swift; sourceTree = "<group>"; };
 		3F4E78D52899782500BB106A /* ReadMeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F4E78E22899785500BB106A /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		3F4E78E52899798B00BB106A /* Book views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book views.swift"; sourceTree = "<group>"; };
+		3FEC267128A2E5C100447FFB /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		3FEC267328A2E73B00447FFB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		3FEC267528A3EE6800447FFB /* PHPickerViewController.View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerViewController.View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +104,10 @@
 		3F4E78B72899782100BB106A /* ReadMe */ = {
 			isa = PBXGroup;
 			children = (
+				3F4E78E22899785500BB106A /* Book.swift */,
+				3FEC267128A2E5C100447FFB /* Library.swift */,
+				3F4E78E42899796400BB106A /* Views */,
 				3F4E78B82899782100BB106A /* ReadMeApp.swift */,
-				3F4E78BA2899782100BB106A /* ContentView.swift */,
 				3F4E78BC2899782500BB106A /* Assets.xcassets */,
 				3F4E78BE2899782500BB106A /* Preview Content */,
 			);
@@ -125,6 +137,17 @@
 				3F4E78D52899782500BB106A /* ReadMeUITestsLaunchTests.swift */,
 			);
 			path = ReadMeUITests;
+			sourceTree = "<group>";
+		};
+		3F4E78E42899796400BB106A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3F4E78BA2899782100BB106A /* ContentView.swift */,
+				3F4E78E52899798B00BB106A /* Book views.swift */,
+				3FEC267328A2E73B00447FFB /* DetailView.swift */,
+				3FEC267528A3EE6800447FFB /* PHPickerViewController.View.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4E78E62899798B00BB106A /* Book views.swift in Sources */,
+				3FEC267428A2E73B00447FFB /* DetailView.swift in Sources */,
 				3F4E78BB2899782100BB106A /* ContentView.swift in Sources */,
+				3FEC267628A3EE6800447FFB /* PHPickerViewController.View.swift in Sources */,
+				3FEC267228A2E5C100447FFB /* Library.swift in Sources */,
 				3F4E78B92899782100BB106A /* ReadMeApp.swift in Sources */,
+				3F4E78E32899785500BB106A /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ReadMe/Preview Content\"";
+				DEVELOPMENT_TEAM = 24P5GCHR65;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ReadMe/Preview Content\"";
+				DEVELOPMENT_TEAM = 24P5GCHR65;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
